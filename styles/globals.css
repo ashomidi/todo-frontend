@@ -1,0 +1,53 @@
+.vote-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.choices {
+  width: 100%;
+}
+
+.vote-count-text {
+  position: absolute;
+  bottom: 0;
+  font-size: 3.1rem;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.button-label {
+  position: relative;
+  font-weight: bold;
+  top: 50%;  
+}
+
+.choice-button {
+  width: 100%;  
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;  
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.choices:nth-child(1) {
+  border-right: 2px solid #ccc;
+}
+
+.choice-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.choice-button:hover:not(:disabled) {
+  background-color: #dcdcdc;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-align: center;
+}
